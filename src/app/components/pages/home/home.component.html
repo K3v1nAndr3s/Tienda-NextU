@@ -1,0 +1,32 @@
+<div class="container">
+	<div id="catalogo">
+		<div class="cabecera">
+			<h2 class="titulo">Catálogo de productos</h2>
+			<div class="panelBusqueda">
+				<label for="busqueda">¿Qué estás buscando?</label>
+				<input type="text" type="search" placeholder="Buscar.." aria-label="Search" (keyup)="buscador(texto.value)" #texto>
+			</div>
+		</div>
+		<div class="productos">
+
+
+			<div class="prod" *ngFor="let post of posts$ | async">
+				<div class="foto">
+					<img src="../../../../assets/{{ post.titleProduct }}.jpg">
+				</div>
+
+				<form>
+					<input type="text" class="contenidoTitulo" value="{{ post.titleProduct }}">
+					<input type="text" class="contenido" value= "Precio: {{ post.precioProduct }}">
+					<input type="text" class="contenido" value="Unidades disponibles: {{ post.unidadesProduct }}">
+					<div class="botones">
+						<button type="button" class="mas"><a [routerLink]="['/post', post.id]">Ver Más</a></button>
+						<input type="submit" value="enviar" (click)="addNewPost(post.titleProduct,post.precioProduct, cantidad.value)">
+						<input type="number"  class="cantidad" value=1 min=1 max="{{ post.unidadesProduct }}" #cantidad>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>

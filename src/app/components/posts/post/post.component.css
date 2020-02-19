@@ -1,0 +1,77 @@
+.container{
+  width: 98.6%;
+  height: 90%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+#catalogo {
+	background-color:  white;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: auto;
+	width: 80%;
+	height: 90%;
+	font-family: 'Josefin Sans', sans-serif;
+	border-radius: 3px;
+  position: absolute;
+}
+.cabecera {
+	height: 60px;
+	width: 95%;
+	padding: 5px;
+	margin: 0 auto;
+	border-bottom: 1px solid grey;
+}
+.titulo {
+	float: left;
+}
+.productos{
+  width: 99%;
+  height: 85%;
+
+}
+.foto{
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 100%;
+  box-shadow: 0 0 8px 4px #969696;
+}
+.prod{
+
+
+  margin-left: 4%;
+  margin-top: 2%;
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  align-content: center;
+
+
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.tituloProducto{
+  height: 18%;
+
+}
+.precio{
+  height: 15%;
+}
+.unidades{
+  height: 15%;
+}
+a{
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.atras{
+  margin-left: 5%;
+  margin-top: 2%;
+  box-shadow: 1px 1px 5px 1px black;
+}

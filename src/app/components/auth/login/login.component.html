@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+	<body>
+		<div class="loginContainer">
+			<div class="loginTitle">Inicio de Sesión</div>
+			<form [formGroup]='loginForm' (ngSubmit)='onLogin(loginForm.value)'>
+				<div class="fields-Container">
+		            <label for="email">Correo Electrónico</label>
+		            <input type="email" name="email" placeholder="Email" formControlName="email" required/>
+		        </div>
+		        <div class="fields-Container">
+		            <label for="password">Contraseña</label>
+		            <input type="password" name="password" placeholder="Contraseña" formControlName="password" required/>
+		        </div>
+		        <div class="fields-button">
+								<input type="submit" class="loginButton" value="Iniciar ">
+		        </div>
+			</form>
+		</div>
+	</body>
+</html>
